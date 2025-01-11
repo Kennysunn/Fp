@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #3a86ff;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header #datetime {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.light-status {
+    display: flex;
+    gap: 1rem;
+}
+
+.light {
+    text-align: center;
+}
+
+.light-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 auto 0.5rem auto;
+}
+
+.light-icon.on {
+    background-color: green;
+}
+
+.light-icon.off {
+    background-color: red;
+}
+
+.temperature, .humidity {
+    text-align: center;
+}
+
+#temp-value, #humidity-value {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#temp-chart, #humidity-chart {
+    height: 150px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
